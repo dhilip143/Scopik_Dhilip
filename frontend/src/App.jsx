@@ -13,6 +13,7 @@ import Santhosh from './santhosh'
  import Syllabus from './Syllabus'
 import Learning from './learning';
 import FAQAccordion from './FAQAccordion';
+import Support from './assets/support';
 
 function App() {
  
@@ -36,6 +37,7 @@ function App() {
         <Route path='/' element={<Dhilip/>}></Route> 
          <Route path='/page' element={<Name/>}></Route>
          <Route path='/learning' element={<Learning/>}></Route>
+         <Route path='/sup' element={<Support/>}></Route>
          </Routes>
          </BrowserRouter>   
        

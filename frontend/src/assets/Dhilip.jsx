@@ -13,7 +13,7 @@ function Dhilip() {
       id: 1,
       img: grass,
       name: "Course Name",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. samples.",
+      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. samples",
       rate: "52hrs",
       star: "4/5",
       status: "all",
@@ -22,7 +22,7 @@ function Dhilip() {
       id: 2,
       img: grass,
       name: "React Course",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. samples.",
+      para: "Learn React step-by-step with projects.",
       rate: "40hrs",
       star: "4.5/5",
       status: "progress",
@@ -31,7 +31,7 @@ function Dhilip() {
       id: 3,
       img: grass,
       name: "Node.js Course",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. samples.",
+      para: "Backend development with Node.js.",
       rate: "60hrs",
       star: "5/5",
       status: "completed",
@@ -40,7 +40,7 @@ function Dhilip() {
       id: 4,
       img: grass,
       name: "UI/UX Design",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. samples.",
+      para: "Design stunning user interfaces.",
       rate: "30hrs",
       star: "3.5/5",
       status: "progress",
@@ -49,7 +49,7 @@ function Dhilip() {
       id: 5,
       img: grass,
       name: "UI/UX Design",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. samples.",
+      para: "Design stunning user interfaces.",
       rate: "30hrs",
       star: "3.5/5",
       status: "progress",
@@ -107,26 +107,30 @@ function Dhilip() {
         
               </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8  ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+        
         {filteredCourses.map((item) => (
           <div
             key={item.id}
             className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition "
           >
+            <div>
             <img
               src={item.img}
               alt="Course"
               className="w-full h-48 object-cover rounded"
             />
-            
-            <div className="mb-[-80px]">
-            <h3 className="text-xl font-semibold mt-4 relative">{item.name}</h3>
+            </div>
+            <div>
+            <div className="mb-100]">
+            <h3 className="text-xl font-semibold mt-4">{item.name}</h3>
             <p className="text-gray-600 mt-2">{item.para}</p>
             <div className="flex justify-between items-center mt-4 text-sm text-gray-700">
               <span>⏱ {item.rate}</span>
               <span>⭐ {item.star}</span>
             </div>
             <button className="bg-[#12314a] center w-full h-[40px]"><Link to={`//${filteredCourses.id}`}>Click Here</Link></button>
+            </div>
            </div>        
           </div>
         ))}
